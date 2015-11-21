@@ -13,7 +13,8 @@
   "scripts": {
     "test": "babel-tape-runner ./test/**/*-test.js | faucet",
     "build": "npm run clean && babel src --out-dir dist",
-    "clean": "rm -rf dist && mkdir dist"
+    "clean": "rm -rf dist && mkdir dist",
+    "prepublish": "npm test && npm run build"
   },
   "repository": {
     "type": "git",
