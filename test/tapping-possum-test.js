@@ -1,8 +1,8 @@
 'use strict';
 
 import test from 'blue-tape'
-import possum from '../src/possum'
-import tappable from '../src/tappable'
+import possum from 'possum'
+import tappable from '../src'
 import stampit from 'stampit'
 
 const buildTap = () => {
