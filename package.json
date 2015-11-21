@@ -1,6 +1,6 @@
 {
   "name": "possum-tappable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple aop for possum",
   "main": "dist/index.js",
   "babel": {
