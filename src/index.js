@@ -9,15 +9,15 @@ export default stampit()
     const noop = () => { }
     this.handling = (this.handling || noop)
     this.transitioning = (this.transitioning || noop)
-    this.handle = function(inputType,args) {
+    this.handle = (...args) => {
         //tap
-        this.handling.call(this,inputType,args)
-        return originalHandle.call(this,inputType,args)
+        this.handling(...args)
+        return originalHandle(...args)
     }
-    this.transition = function(toState) {
+    this.transition = (...args) => {
         //tap
-        this.transitioning(toState)
-        return originalTransition.call(this,toState)
+        this.transitioning(...args)
+        return originalTransition(...args)
     }
 })
 
