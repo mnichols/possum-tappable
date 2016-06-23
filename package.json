@@ -1,6 +1,6 @@
 {
   "name": "possum-tappable",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "simple aop for possum",
   "main": "dist/index.js",
   "babel": {
@@ -41,6 +41,6 @@
     "babel-tape-runner": "^2.0.1",
     "blue-tape": "^0.1.10",
     "faucet": "0.0.1",
-    "possum": "^0.3.1"
+    "possum": "^0.3.6"
   }
 }
